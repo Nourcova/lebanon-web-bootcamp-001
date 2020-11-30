@@ -1,0 +1,176 @@
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+#All{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 2px solid turquoise;
+    background-color:whitesmoke
+    background-color: rgb(214, 247, 247);
+}
+
+#page-title{
+    background: turquoise ;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+#page-title h1,{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#page-title input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid turquoise;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+}
+
+#task-list, #add-task, #date, #tday ,#time{
+    margin: 30px;
+}
+
+#task-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li{
+    padding: 20px;
+    border-left: 5px solid turquoise;
+    margin: 20px 10px;
+}
+
+#task-list li:hover{
+    border-color:rgb(240, 58, 58);
+}
+
+.remove{
+    float: right;
+    background: turquoise;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border: 0.5px solid teal;
+}
+
+.remove:hover{
+    background: rgb(240, 58, 58);
+}
+
+#add-task{
+    width: 400px;
+    margin: 0 auto;
+    
+}
+
+#add-task input{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid teal;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+    clear: both;
+  
+}
+
+#add-task button{
+    border: 1px solid teal;
+    background: turquoise;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+    margin: 20px 0;
+    border-left: 0;
+    color: white;
+}
+
+#add-task:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#add-task label{
+  line-height: 52px;
+}
+
+/*ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}*/
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.expired label {
+background-color: #E04151;
+color: black;
+border-radius: 20px;
+margin :5px;
+padding: 2.7px;
+} 
+
+
+
+ @media screen and (max-width:500px) {
+
+  * {
+  
+   //flex-wrap: wrap;
+  }
+  
+h1,h2,#time,#add-task,#priority_id,#date_id{
+  text-align: center;
+}
+  #All{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+    border: 1px solid turquoise;
+    
+    justify-content: center;
+  }
+  
+  
+}
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+}
+

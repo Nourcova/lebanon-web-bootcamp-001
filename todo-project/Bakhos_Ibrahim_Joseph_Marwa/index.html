@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="media.css" media="mediatype">
+     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+  
+  </head>
+  <body>
+  	<div id="All">
+	    <header>
+	    	<div id="page-title">
+	    		<h1 class="title"><b>To Do List</b></h1>
+	    	</div>
+	    </header>
+      <div>
+       <h1 id="tday"> Today </h1>
+
+      <div id="time"></div>
+    <h1 id="date"> </h1>
+  
+   
+    </div>
+    
+	    <div id="task-list">
+	    	<h2 class="title">List of tasks to do</h2>
+        
+	    	<ul>
+	    
+	    	</ul>
+        <div>
+         <form id="date_id">
+<label for="Deadline">Select Deadline:</label>
+
+<input type="date" class="datepicker" name="deadline" id="deadline">
+    </form>
+    <form id="priority_id">
+      <label>Select Priority:</label>
+    <select id="priority">
+  
+        <option id="high" class="priority" value="High">High</option>
+        <option class="priority"  value="Medium">Medium</option>
+        <option class="priority" value="Low">Low</option>
+      </select>
+      </form>
+    </div>
+	    </div>
+      <div>
+	    <form id="add-task">
+	    	<input type="text" id="input_id" placeholder="Add a task..." / required>
+	    	<button>Add</button>
+	    </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+     <script>
+       
+let n =  new Date();
+let y = n.getFullYear();
+let m = n.getMonth() + 1;
+//let h = n.getHours();
+//let mi = n.getMinutes();
+//let s = n.getSeconds();
+let d = n.getDate();
+ document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+</script>
+<!--<p id="date"></p>-->
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    
+document.addEventListener('DOMContentLoaded', function() {
+ const calender=document.querySelector('#deadline');
+ M.Datepicker.init(calender,{});})
+  </script>
+  -->
+  </body>
+</html>
